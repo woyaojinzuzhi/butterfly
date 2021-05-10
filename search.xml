@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>review</title>
+      <link href="2021/05/10/review/"/>
+      <url>2021/05/10/review/</url>
+      
+        <content type="html"><![CDATA[<h1 id="什么是JavaScript"><a href="#什么是JavaScript" class="headerlink" title="什么是JavaScript"></a>什么是JavaScript</h1><blockquote><p>书：《Javascript高级程序设计》</p></blockquote><p>JavaScript能够实现复杂的计算交互，包括闭包、匿名函数，甚至元编程等。<br><mark>桌面浏览器</mark>、<mark>手机浏览器</mark>和<mark>屏幕阅读器</mark>也支持JavaScript。<br>微软拥有自家客户端脚本语言—<u>VBScript</u>。</p><h2 id="lala">了解历史</h2><p>个人想要了解：<br>早期，网页越来越大，越来越复杂，使得验证简单的表单需要大量与服务器的往返通信，成为用户的痛点。<br>Mocha（LiveScript）—脚本语言诞生了。网景与Sun公司共同开发，后来发布后LiveScript改名为JavaScript。<br>创立之初，想在客户端和服务端都使用它，而在服务端，给他起了个名，叫LiveWire。<br>微软在当时发布了JScript，导致出现两个版本的JavaScript。<br>最终成立第39技术委员会（TC39），将JS语言标准化，使JS成为了<mark>通用、跨平台、厂商中立</mark>的脚本语言。<br>TC39委员会由网景、Sun、微软、Borland、Nombas和其他对这门脚本语言有兴趣的工程师组成。<br>最终打造出ECMA-262 — <mark><strong>ECMAScript</strong></mark>。<br>各家浏览器最终都以ECMAScript作为自己JavaScript实现的依据。<br><strong>个人见解</strong>：由此可见，ECMAScript是一个依据标准。其实就是一种<strong>规范</strong>。</p><h2 id="JavaScript实现"><a href="#JavaScript实现" class="headerlink" title="JavaScript实现"></a>JavaScript实现</h2><p>核心：ECMAScript<br>文档对象模型：DOM<br>浏览器对象模型：BOM</p><!-- 图片放置 --><p><img src="https://cdn.jsdelivr.net/gh/woyaojinzuzhi/picgo/images/js.png" alt="js"></p><p>其实ECMAScript并不局限于Web浏览器上。<br><mark><u>Web浏览器</u></mark>只是ECMAScript实现可能存在的一种<mark><strong>宿主环境</strong></mark><br>宿主环境提供ECMAScript的基准实现和与环境自身交互必需的扩展（例如DOM）。<br>扩展使用ECMAScript核心类型和语法，同时呢，提供特定于环境的额外功能。<br>大体就是扩展自带环境和额外功能，只是使用了ECMAScript的核心类型和语法。<br>同样作为<mark><strong>宿主环境</strong></mark>的还有服务器端JavaScript的<mark><u>Node.js</u></mark>和已经淘汰的<mark><u>Adobe Flash</u></mark>。<br>ECMA描述了JS语言的：<u>语法、类型、语句、关键字、保留字、操作符、全局对象</u>。<br>ECMAScript只是所有关乎这个规范的语言的一个<strong>统称</strong>，他们之间是<strong>包含关系</strong>。<br>如：JavaScript实现了ECMAScript，同样Adobe ActionScript也一样实现了ECMAScript。</p><!-- lala[lala](#lala) --><blockquote><ul><li>ES5于2019年12月3日正式发布。 该版本致力于厘清第三版存在的起义，同时添加了新功能（<u>包括原生的解析和序列化JSON数据的JSON对象</u>、<u>方便继承和高级属性定义的方法</u>、<u>增强ECMAScript引擎解释和解释和执行代码能力的严格模式</u>）；</li><li>ES6于2015年6月发布，又称ES2015。最重要的一批增强特性。 ES6正式支持了类、模块、迭代器、生成器、箭头函数、期约、反射、代理和众多新的数据类型。</li></ul></blockquote><h2 id="DOM"><a href="#DOM" class="headerlink" title="DOM"></a>DOM</h2><p><strong>文档对象模型</strong>（DOM,Document Object Model）<br>是一个应用编程接口（API），用于在HTML中使用扩展的XML。<br>DOM将整个页面抽象为一组分层节点。HTML或XML页面的每个组成部分都是一种节点，包含不同的数据。</p><pre class=" language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span><span class="token punctuation">></span></span>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">></span></span>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">></span></span>Sample Page<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">></span></span>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">></span></span>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">></span></span>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">></span></span>Hello World!<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">></span></span></code></pre><p><img src="https://cdn.jsdelivr.net/gh/woyaojinzuzhi/picgo/images/tu1.jpg" alt="tu1"></p><p>DOM的好处在于，可以让开发者，<strong>随意</strong>控制网页的内容和结构，使用DOM API可以轻松删除、添加、替换和修改节点。</p><h3 id="为什么DOM是必需的"><a href="#为什么DOM是必需的" class="headerlink" title="为什么DOM是必需的"></a>为什么DOM是必需的</h3><p>因为早期网景和微软的竞争，担心Web发生分裂，变成面向浏览器开发网页。所以，W3C制定了DOM标准的进程。</p><blockquote><p>注：DOM并非只能通过JS实现，很多其他语言也可以实现，只不过对于浏览器来说，DOM就是使用ECMAScript实现的，如今已经成为JS语言的一大组成部分。</p></blockquote>]]></content>
+      
+      
+      <categories>
+          
+          <category> 复习JS </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 书：《Javascript高级程序设计》 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Hello World</title>
       <link href="2021/05/09/hello-world/"/>
       <url>2021/05/09/hello-world/</url>
