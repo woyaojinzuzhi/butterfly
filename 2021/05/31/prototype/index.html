@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="复习面试经验一, HTML,CSS,JavaScript,JQuery,React,NodeJs,Vue.js等">
+    <meta name="keywords" content="原型链prototype, HTML,CSS,JavaScript,JQuery,React,NodeJs,Vue.js等">
     <meta name="description" content="专注于Web,前端技术,分享生活,分享知识">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>复习面试经验一 | Mr.李还行</title>
+    <title>原型链prototype | Mr.李还行</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -421,12 +421,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/5.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/8.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">复习面试经验一</h1>
+                    <h1 class="description center-align post-title">原型链prototype</h1>
                 </div>
             </div>
         </div>
@@ -542,8 +542,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/%E9%9D%A2%E8%AF%95%E7%BB%8F%E9%AA%8C/">
-                                <span class="chip bg-color">面试经验</span>
+                            <a href="/tags/%E5%8E%9F%E5%9E%8B%E9%93%BE/">
+                                <span class="chip bg-color">原型链</span>
                             </a>
                         
                     </div>
@@ -554,8 +554,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/%E9%9D%A2%E8%AF%95%E7%BB%8F%E9%AA%8C/" class="post-category">
-                                面试经验
+                            <a href="/categories/JS%E5%A4%8D%E4%B9%A0/" class="post-category">
+                                JS复习
                             </a>
                         
                     </div>
@@ -567,21 +567,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-05-10
+                    2021-05-31
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2021-05-16
+                    2021-06-01
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    936
+                    1.1k
                 </div>
                 
 
@@ -603,43 +603,127 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="临时的一篇复习，很好的文章"><a href="#临时的一篇复习，很好的文章" class="headerlink" title="临时的一篇复习，很好的文章"></a>临时的一篇复习，很好的文章</h1><h2 id="数据结构"><a href="#数据结构" class="headerlink" title="数据结构"></a>数据结构</h2><h3 id="一、数组和链表"><a href="#一、数组和链表" class="headerlink" title="一、数组和链表"></a>一、数组和链表</h3><p>两者的区别：</p>
+                <h1 id="原型到原型链复习"><a href="#原型到原型链复习" class="headerlink" title="原型到原型链复习"></a>原型到原型链复习</h1><h2 id="构造函数创建对象"><a href="#构造函数创建对象" class="headerlink" title="构造函数创建对象"></a>构造函数创建对象</h2><p>先使用构造函数创建一个对象：</p>
+<pre class=" language-js"><code class="language-js"><span class="token keyword">function</span> <span class="token function">Person</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    
+<span class="token punctuation">}</span>
+
+<span class="token keyword">var</span> person <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Person</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+person<span class="token punctuation">.</span>name <span class="token operator">=</span> <span class="token string">'Kevin'</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>person<span class="token punctuation">.</span>name<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">//Kevin</span>
+</code></pre>
+<p>上面代码中，Person是一个构造函数，我们使用new创建了一个实例对象person。</p>
+<h3 id="prototype"><a href="#prototype" class="headerlink" title="prototype"></a>prototype</h3><p>每个函数都有一个prototype属性，比如：</p>
+<pre class=" language-js"><code class="language-js"><span class="token keyword">function</span> <span class="token function">Person</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    
+<span class="token punctuation">}</span>
+
+<span class="token comment" spellcheck="true">//注意：prototype是函数才会有的属性</span>
+
+Persion<span class="token punctuation">.</span>prototype<span class="token punctuation">.</span>name <span class="token operator">=</span> <span class="token string">'Kevin'</span><span class="token punctuation">;</span>
+<span class="token keyword">var</span> person1 <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Person</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">var</span> person2 <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Person</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>person1<span class="token punctuation">.</span>name<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// Kevin</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>person2<span class="token punctuation">.</span>name<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// Kevin</span>
+</code></pre>
+<p>其实，函数的prototype属性指向了一个对象，这个对象正是调用该构造函数而创建的实例的原型，也就是这个例子中的person1和person2的原型。</p>
+<p><strong>原型</strong>：可以理解为，每一个JavaScript对象（null除外）在创建的时候就会与之关联另一个对象，这个对象就是原型，每一个对象都会从原型“继承”属性。</p>
+<p>构造函数和实例原型之间的关系（图中用<code>Object.prototype</code>表示实例原型）：</p>
+<p><img src="/medias/loading.gif" data-original="https://cdn.jsdelivr.net/gh/woyaojinzuzhi/picgo/images/prototype1.png" alt="构造函数和实例原型之间的关系"></p>
+<p>那么如何表示<strong>实例</strong>与<strong>实例原型</strong>，也就是<code>person</code>和<code>Person.prototype</code>之间的关系呢，这时候就用到第二个属性：</p>
+<h3 id="proto"><a href="#proto" class="headerlink" title="_proto_"></a>_<em>proto</em>_</h3><p>这是每一个JavaScript对象（除了null）都具有的一个属性，叫__proto__，这个属性会指向该对象的原型。</p>
+<p>证明：</p>
+<pre class=" language-js"><code class="language-js"><span class="token keyword">function</span> <span class="token function">Person</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    
+<span class="token punctuation">}</span>
+
+<span class="token keyword">var</span> person <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Person</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>person<span class="token punctuation">.</span>__proto__ <span class="token operator">===</span> Person<span class="token punctuation">.</span>prototype<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// true</span>
+</code></pre>
+<p>关系图：</p>
+<img src="/medias/loading.gif" data-original="https://cdn.jsdelivr.net/gh/woyaojinzuzhi/picgo/images/prototype2.png" alt="prototype2">
+
+<p>实例对象和构造函数都可以指向原型，原型是否有属性指向构造函数或者实例呢？</p>
+<h3 id="constructor-NaN"><a href="#constructor-NaN" class="headerlink" title="constructor"></a>constructor</h3><p>指向实例是没有的，因为一个构造函数可以生成多个实例，但是<strong>原型指向构造函数</strong>是有的，<mark>constructor</mark>，每个原型都有一个constructor属性指向关联的构造函数。</p>
+<p>验证：</p>
+<pre class=" language-js"><code class="language-js"><span class="token keyword">function</span> <span class="token function">Person</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    
+<span class="token punctuation">}</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>Person <span class="token operator">===</span> Person<span class="token punctuation">.</span>prototype<span class="token punctuation">.</span>constructor<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// true</span>
+</code></pre>
+<p>下一个例子：</p>
+<pre class=" language-js"><code class="language-js"><span class="token keyword">function</span> <span class="token function">Person</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    
+<span class="token punctuation">}</span>
+
+<span class="token keyword">var</span> person <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Person</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>person<span class="token punctuation">.</span>constructor <span class="token operator">===</span> Person<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// true</span>
+</code></pre>
+<p>这里注意：</p>
+<p>当获取person.constructor时，其实person中并没有constructor属性，当不能读取到constructor属性时，会从person的原型也就是Person.prototype中读取，正好原型中有该属性，所以：</p>
+<pre class=" language-js"><code class="language-js">person<span class="token punctuation">.</span>constructor <span class="token operator">===</span> Person<span class="token punctuation">.</span>prototype<span class="token punctuation">.</span>constructor<span class="token punctuation">;</span>
+</code></pre>
+<p>进一步更新关系图：</p>
+<p><img src="/medias/loading.gif" data-original="https://cdn.jsdelivr.net/gh/woyaojinzuzhi/picgo/images/prototype3.png" alt="关系图"></p>
+<p>综上：</p>
+<pre class=" language-js"><code class="language-js"><span class="token keyword">function</span> <span class="token function">Person</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    
+<span class="token punctuation">}</span>
+
+<span class="token keyword">var</span> person <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Person</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>person<span class="token punctuation">.</span>__proto__ <span class="token operator">==</span> Person<span class="token punctuation">.</span>prototype<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// true</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>Person<span class="token punctuation">.</span>prototype<span class="token punctuation">.</span>constructor <span class="token operator">==</span> Person<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// true</span>
+<span class="token comment" spellcheck="true">//ES5的方法，可以获得对象的原型</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>Object<span class="token punctuation">.</span><span class="token function">getPrototypeOf</span><span class="token punctuation">(</span>person<span class="token punctuation">)</span> <span class="token operator">===</span> Person<span class="token punctuation">.</span>prototype<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// ture</span>
+</code></pre>
+<h2 id="实例与原型"><a href="#实例与原型" class="headerlink" title="实例与原型"></a>实例与原型</h2><p>当读取实例的属性时，如果找不到，就会查找对象关联的原型中的属性，如果还查不到就去找原型的原型，一直到最顶层为止。</p>
+<p>举个栗子🌰：</p>
+<pre class=" language-js"><code class="language-js"><span class="token keyword">function</span> <span class="token function">Person</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    
+<span class="token punctuation">}</span>
+
+Person<span class="token punctuation">.</span>prototype<span class="token punctuation">.</span>name <span class="token operator">=</span> <span class="token string">'Kevin'</span><span class="token punctuation">;</span>
+
+<span class="token keyword">var</span> person <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Person</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+person<span class="token punctuation">.</span>name <span class="token operator">=</span> <span class="token string">'Daisy'</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>person<span class="token punctuation">.</span>name<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// Daisy</span>
+
+<span class="token keyword">delete</span> person<span class="token punctuation">.</span>name<span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>person<span class="token punctuation">.</span>name<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// Kevin</span>
+</code></pre>
+<p>第一个输出Daisy不用多说。</p>
+<p>后面删除person的name属性时，读取person.name，从person对象中找不到name属性，就从person的原型——person.__proto__，也就是Person.prototype中查找，找到了Kevin。</p>
+<p>若没找到呢？原型的原型又是什么？</p>
+<h3 id="原型的原型"><a href="#原型的原型" class="headerlink" title="原型的原型"></a>原型的原型</h3><p>原型是一个对象，既然是对象，我们就可以用最原始的方式创建它：</p>
+<pre class=" language-js"><code class="language-js"><span class="token keyword">var</span> obj <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Object</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+obj<span class="token punctuation">.</span>name <span class="token operator">=</span> <span class="token string">'Kevin'</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>obj<span class="token punctuation">.</span>name<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// Kevin</span>
+</code></pre>
+<p>其实原型对象就是通过Object构造函数生成的，结合之前所讲，实例的__proto__指向构造函数的prototype，更新关系图：</p>
+<p><img src="/medias/loading.gif" data-original="https://cdn.jsdelivr.net/gh/woyaojinzuzhi/picgo/images/prototype4.png" alt="更新关系图"></p>
+<p>这样来看<code>Person.prototype</code>，就等同于<code>Object</code>的实例化。</p>
+<h3 id="原型链"><a href="#原型链" class="headerlink" title="原型链"></a>原型链</h3><p>那<code>Object.prototype</code>的原型呢？</p>
+<p>null，我们可以输出：</p>
+<pre class=" language-js"><code class="language-js">console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>Object<span class="token punctuation">.</span>prototype<span class="token punctuation">.</span>__proto__ <span class="token operator">===</span> <span class="token keyword">null</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// true</span>
+</code></pre>
+<p>那么null代表什么呢？</p>
+<p>引用阮一峰老师的 <a target="_blank" rel="noopener" href="http://www.ruanyifeng.com/blog/2014/03/undefined-vs-null.html">《undefined与null的区别》</a> 就是：</p>
 <blockquote>
-<ol>
-<li>存储空间上：<strong>数组</strong>在内存中是连续的，从栈中分配空间；<strong>链表</strong>是不可以连续的，从堆中分配空间。</li>
-<li>查询、访问：<strong>数组</strong>可以随机访问每一个元素，查找速度较快；<strong>链表</strong>必须是顺序访问，<mark>不能</mark>随机访问。</li>
-<li>空间使用：<strong>链表</strong>对内存空间的利用率较高，可扩展性高；<strong>数组</strong>不行，数组的空间大小是固定的，不适合动态存储，不方便动态添加。</li>
-<li>添加或删除元素：数组比链表<mark>慢</mark>，因为数组要移动<strong>大量</strong>的元素，而链表只需修改指针即可。</li>
-</ol>
+<p>null 表示“没有对象”，即该处不应该有值。</p>
 </blockquote>
-<h3 id="二、堆和栈的区别"><a href="#二、堆和栈的区别" class="headerlink" title="二、堆和栈的区别"></a>二、堆和栈的区别</h3><blockquote>
-<ol>
-<li>申请方式：栈（stack）由系统自动分配。堆：需要程序员自己申请，并指明大小。</li>
-<li>申请效率比较：<br>栈：由<strong>系统自动分配</strong>，速度较快。<br>堆：是由<strong>new分配的内存</strong>，一般速度较慢，而且容易产生内存碎片，不过用起来最方便。</li>
-<li>申请大小的限制：<br>栈顶的地址和栈的最大容量是系统预先<mark>规定好的</mark>，在WINDOWS下，栈的大小是2M，超出剩余空间会<strong>溢出</strong>。<br>堆的大小受限于计算机系统中有效的虚拟内存。</li>
-<li>数据结构区别：<br>堆可以被看成是一棵树，如：堆排序。<br>栈：一种先进后出的数据结构。</li>
-<li>缓存方式区别：<br>栈：使用的是一级缓存，他们通常都是被调用时处于存储空间中，调用完毕立即释放。<br>堆：存放在二级缓存中，生命周期由虚拟机的垃圾回收算法来决定。</li>
-</ol>
-</blockquote>
-<h3 id="快排"><a href="#快排" class="headerlink" title="快排"></a>快排</h3><p>通常将数组的第一个元素定义为比较元素，通过一趟排序将要排序的数据分割成独立的两部分，其中一部分的所有数据都比另外一部分的所有数据都要小，然后再按照此方法对这两部分数据分别进行快速排序，整个排序过程可以递归进行，以此达到整个数据变成有序序列。</p>
-<p>|3、5、6、2、1、7、8、4|<br>-&gt; |3、2、1、4| &amp;&amp; |5、6、7、8|<br>-&gt; |2、1| &amp;&amp; |3、4| &amp;&amp; |5、6| &amp;&amp; |7、8|<br>-&gt; 1 2 3 4 5 6 7 8</p>
-<h2 id="数据库"><a href="#数据库" class="headerlink" title="数据库"></a>数据库</h2><h3 id="一、索引优化"><a href="#一、索引优化" class="headerlink" title="一、索引优化"></a>一、索引优化</h3><ol>
-<li>对较小的数据列使用索引，这样会使索引文件更小，同时内存中也可以装载更多的索引键；</li>
-<li>对where，on，group by，order by中出现的列使用索引；</li>
-<li>并不是所有索引对查询都有效，当索引列有大量数据重复时，查询可能不会去利用索引；</li>
-<li>索引并不是越多越好。提高查询效率，但同时也降低了insert及update的效率，因为可能会重建索引；</li>
-<li>应尽量避免在where子句中使用<mark>!=</mark>或<mark>&lt;&gt;</mark>操作符或使用<mark>or</mark>来连接条件，否则引擎放弃使用索引而进行全表扫描；</li>
-<li>where后的查询字段尽量减少使用函数或者表达式操作，因为会造成索引失效；</li>
-<li>尽量的扩展索引，不要新建索引。</li>
-</ol>
-<h3 id="二、数据库优化"><a href="#二、数据库优化" class="headerlink" title="二、数据库优化"></a>二、数据库优化</h3><h3 id="三、索引的最左优先原则"><a href="#三、索引的最左优先原则" class="headerlink" title="三、索引的最左优先原则"></a>三、索引的最左优先原则</h3><h3 id="四、数据库左连、右连和内连"><a href="#四、数据库左连、右连和内连" class="headerlink" title="四、数据库左连、右连和内连"></a>四、数据库左连、右连和内连</h3><blockquote>
-<ul>
-<li><strong>左连</strong>：首先取出a表中所有数据，然后再加上与a，b匹配的数据。</li>
-<li><strong>右连</strong>：指的是首先取出b表中所有数据，然后再加上与a，b匹配的数据。</li>
-<li><strong>内连</strong>：两个表a，b相连接，要取出id相同的字段。</li>
-</ul>
-</blockquote>
-<h3 id="五、存储引擎以及他们之间的区别"><a href="#五、存储引擎以及他们之间的区别" class="headerlink" title="五、存储引擎以及他们之间的区别"></a>五、存储引擎以及他们之间的区别</h3>
+<p>所以<code>Object.prototype.__proto__</code>的<strong>值为null</strong>和<code>Object.prototype</code><strong>没有原型</strong>是一个意思。</p>
+<p>所以查找属性的时候查到Object.prototype就可以停止查找了。</p>
+<p>最终关系图：</p>
+<p><img src="/medias/loading.gif" data-original="https://cdn.jsdelivr.net/gh/woyaojinzuzhi/picgo/images/prototype5.png" alt="最终关系图"></p>
+<p>图中由相互关联的原型组成的链状结构就是原型链，就是蓝色的这条线。</p>
+<p>_<em>proto</em>_ ，绝大部分浏览器都支持这个非标准的方法访问原型，然而它并不存在于 <code>Person.prototype</code> 中，实际上，它是来自于<code>Object.prototype</code>，与其说是一个属性，不如说是一个 <code>getter/setter</code>，当使用 <code>obj.__proto__ </code>时，可以理解成返回了 <code>Object.getPrototypeOf(obj)</code>。</p>
+<p>最后，继承，引用《你不知道的JavaScript》中的话，就是：继承意味着复制操作，然而JavaScript默认并不会复制对象的属性，相反，JavaScript只是在两个对象之间创建关联，更像委托的关系。</p>
+<p>总结图：</p>
+<p><img src="/medias/loading.gif" data-original="https://cdn.jsdelivr.net/gh/woyaojinzuzhi/picgo/images/108361110-09e48c80-722d-11eb-9732-3fdb0615f07c.png" alt="108361110-09e48c80-722d-11eb-9732-3fdb0615f07c"></p>
+
                 
             </div>
             <hr/>
@@ -665,7 +749,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://www.xyljj.top/2021/05/10/mianjing1/">https://www.xyljj.top/2021/05/10/mianjing1/</a>
+                    <a href="https://www.xyljj.top/2021/05/31/prototype/">https://www.xyljj.top/2021/05/31/prototype/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -703,8 +787,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/%E9%9D%A2%E8%AF%95%E7%BB%8F%E9%AA%8C/">
-                                    <span class="chip bg-color">面试经验</span>
+                                <a href="/tags/%E5%8E%9F%E5%9E%8B%E9%93%BE/">
+                                    <span class="chip bg-color">原型链</span>
                                 </a>
                             
                         </div>
@@ -1146,13 +1230,13 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2021/05/20/react1/">
+                <a href="/2021/06/01/scope/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/loading.gif" data-original="/medias/featureimages/22.jpg" class="responsive-img" alt="react1">
+                        <img src="/medias/loading.gif" data-original="/medias/featureimages/1.jpg" class="responsive-img" alt="作用域scope">
                         
-                        <span class="card-title">react1</span>
+                        <span class="card-title">作用域scope</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -1163,8 +1247,57 @@
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-05-20
+                            <i class="far fa-clock fa-fw icon-date"></i>2021-06-01
                         </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/JS%E5%A4%8D%E4%B9%A0/" class="post-category">
+                                    JS复习
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E4%BD%9C%E7%94%A8%E5%9F%9F/">
+                        <span class="chip bg-color">作用域</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2021/05/31/react2/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/loading.gif" data-original="/medias/featureimages/21.jpg" class="responsive-img" alt="react2">
+                        
+                        <span class="card-title">react2</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-05-31
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -1182,55 +1315,6 @@
                     
                     <a href="/tags/react%E5%AE%98%E7%BD%91/">
                         <span class="chip bg-color">react官网</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/2021/05/10/review/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/loading.gif" data-original="/medias/featureimages/4.jpg" class="responsive-img" alt="复习JS">
-                        
-                        <span class="card-title">复习JS</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-05-10
-                            </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/%E5%A4%8D%E4%B9%A0JS/" class="post-category">
-                                    复习JS
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/%E4%B9%A6%EF%BC%9A%E3%80%8AJavascript%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E3%80%8B/">
-                        <span class="chip bg-color">书：《Javascript高级程序设计》</span>
                     </a>
                     
                 </div>
