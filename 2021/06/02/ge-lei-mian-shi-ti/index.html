@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="react面试题, HTML,CSS,JavaScript,JQuery,React,NodeJs,Vue.js等">
+    <meta name="keywords" content="其他面试题, HTML,CSS,JavaScript,JQuery,React,NodeJs,Vue.js等">
     <meta name="description" content="专注于Web,前端技术,分享生活,分享知识">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>react面试题 | Mr.李还行</title>
+    <title>其他面试题 | Mr.李还行</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -421,12 +421,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/10.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/19.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">react面试题</h1>
+                    <h1 class="description center-align post-title">其他面试题</h1>
                 </div>
             </div>
         </div>
@@ -542,8 +542,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/react%E9%9D%A2%E8%AF%95%E9%A2%98/">
-                                <span class="chip bg-color">react面试题</span>
+                            <a href="/tags/%E9%9D%A2%E8%AF%95%E9%A2%98/">
+                                <span class="chip bg-color">面试题</span>
                             </a>
                         
                     </div>
@@ -554,8 +554,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/react%E5%A4%8D%E4%B9%A0/" class="post-category">
-                                react复习
+                            <a href="/categories/%E9%9D%A2%E8%AF%95%E9%A2%98/" class="post-category">
+                                面试题
                             </a>
                         
                     </div>
@@ -567,21 +567,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-06-04
+                    2021-06-02
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2021-06-04
+                    2021-06-21
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    68
+                    336
                 </div>
                 
 
@@ -603,8 +603,25 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h4 id="render函数中return如果没有使用-会有什么问题？"><a href="#render函数中return如果没有使用-会有什么问题？" class="headerlink" title="render函数中return如果没有使用()会有什么问题？"></a>render函数中return如果没有使用()会有什么问题？</h4><p>在不换行的情况下没有问题，换行的话就需要用()包住</p>
-<p>原因在于，JSX转为js后，js会在每行自动加<code>';'</code>，如果return后换行了，那么就会变成return;</p>
+                <h2 id="如何实现横向滚动条"><a href="#如何实现横向滚动条" class="headerlink" title="如何实现横向滚动条"></a>如何实现横向滚动条</h2><pre class=" language-css"><code class="language-css"><span class="token selector"><span class="token class">.box</span> </span><span class="token punctuation">{</span>
+    <span class="token property">overflow-x</span><span class="token punctuation">:</span> scroll<span class="token punctuation">;</span>
+    <span class="token property">overflow-y</span><span class="token punctuation">:</span> hidden<span class="token punctuation">;</span>
+    <span class="token property">white-space</span><span class="token punctuation">:</span> nowrap<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h2 id="JS的数据类型"><a href="#JS的数据类型" class="headerlink" title="JS的数据类型"></a>JS的数据类型</h2><p>五种基本数据类型：Number、String、Boolean、Undefined、Null</p>
+<p>一种复杂数据类型：Object</p>
+<p>三大引用类型：Object、Array、Function</p>
+<p>ES6新增数据类型：Symbol。这种类型的对象永不相等，即使创建的时候传入相同的值，可以解决属性名冲突的问题，作为标记。</p>
+<h2 id="如何快速给一个对象中的某个属性更改属性名"><a href="#如何快速给一个对象中的某个属性更改属性名" class="headerlink" title="如何快速给一个对象中的某个属性更改属性名"></a>如何快速给一个对象中的某个属性更改属性名</h2><p>两种方式：</p>
+<p><strong>第一种：</strong>先增加，将要修改的属性的值赋给新增的属性，再删除掉原来的属性。</p>
+<p><strong>第二种</strong>：可以将对象或数组对象用<code>JSON.stringify()</code>将对象转为字符串。接下来通过replace方法或正则将要修改的属性名替换。最后再通过<code>JSON.parse()</code>将字符串转为对象。</p>
+<h2 id="defer-和-async-的区别"><a href="#defer-和-async-的区别" class="headerlink" title="defer 和 async 的区别"></a>defer 和 async 的区别</h2><p><strong>1. script 没有 defer 和 async</strong></p>
+<p>　　会停止（阻塞）dom 树构建，立即加载，并执行脚本</p>
+<p><strong>2. script 带 async</strong></p>
+<p>　　不会停止（阻塞）dom 树构建，立即异步加载，加载好后立即执行</p>
+<p><strong>3. script 带 defer</strong></p>
+<p>　　不会停止（阻塞）dom 树构建，立即异步加载。加载好后，如果 dom 树还没构建好，则先等 dom 树解析好再执行；如果 dom 树已经准备好，则立即执行。</p>
 
                 
             </div>
@@ -631,7 +648,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://www.xyljj.top/2021/06/04/react-view/">https://www.xyljj.top/2021/06/04/react-view/</a>
+                    <a href="https://www.xyljj.top/2021/06/02/ge-lei-mian-shi-ti/">https://www.xyljj.top/2021/06/02/ge-lei-mian-shi-ti/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -669,8 +686,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/react%E9%9D%A2%E8%AF%95%E9%A2%98/">
-                                    <span class="chip bg-color">react面试题</span>
+                                <a href="/tags/%E9%9D%A2%E8%AF%95%E9%A2%98/">
+                                    <span class="chip bg-color">面试题</span>
                                 </a>
                             
                         </div>
@@ -1112,13 +1129,13 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2021/06/06/flex-bu-ju/">
+                <a href="/2021/06/04/react-view/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/loading.gif" data-original="/medias/featureimages/22.jpg" class="responsive-img" alt="Flex布局">
+                        <img src="/medias/loading.gif" data-original="/medias/featureimages/10.jpg" class="responsive-img" alt="react面试题">
                         
-                        <span class="card-title">Flex布局</span>
+                        <span class="card-title">react面试题</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -1129,14 +1146,14 @@
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-06-06
+                            <i class="far fa-clock fa-fw icon-date"></i>2021-06-04
                         </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/CSS%E5%A4%8D%E4%B9%A0/" class="post-category">
-                                    CSS复习
+                            <a href="/categories/react%E5%A4%8D%E4%B9%A0/" class="post-category">
+                                    react复习
                                 </a>
                             
                             
@@ -1146,8 +1163,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E9%98%AE%E4%B8%80%E5%B3%B0%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/">
-                        <span class="chip bg-color">阮一峰个人博客</span>
+                    <a href="/tags/react%E9%9D%A2%E8%AF%95%E9%A2%98/">
+                        <span class="chip bg-color">react面试题</span>
                     </a>
                     
                 </div>
@@ -1161,13 +1178,13 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2021/06/02/ge-lei-mian-shi-ti/">
+                <a href="/2021/06/01/scope/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/loading.gif" data-original="/medias/featureimages/19.jpg" class="responsive-img" alt="其他面试题">
+                        <img src="/medias/loading.gif" data-original="/medias/featureimages/1.jpg" class="responsive-img" alt="作用域scope">
                         
-                        <span class="card-title">其他面试题</span>
+                        <span class="card-title">作用域scope</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -1178,14 +1195,14 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-06-02
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-06-01
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E9%9D%A2%E8%AF%95%E9%A2%98/" class="post-category">
-                                    面试题
+                            <a href="/categories/JS%E5%9F%BA%E7%A1%80/" class="post-category">
+                                    JS基础
                                 </a>
                             
                             
@@ -1195,8 +1212,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E9%9D%A2%E8%AF%95%E9%A2%98/">
-                        <span class="chip bg-color">面试题</span>
+                    <a href="/tags/%E4%BD%9C%E7%94%A8%E5%9F%9F/">
+                        <span class="chip bg-color">作用域</span>
                     </a>
                     
                 </div>

@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="react面试题, HTML,CSS,JavaScript,JQuery,React,NodeJs,Vue.js等">
+    <meta name="keywords" content="字节面试题(还附加了别的), HTML,CSS,JavaScript,JQuery,React,NodeJs,Vue.js等">
     <meta name="description" content="专注于Web,前端技术,分享生活,分享知识">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>react面试题 | Mr.李还行</title>
+    <title>字节面试题(还附加了别的) | Mr.李还行</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -421,12 +421,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/10.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/0.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">react面试题</h1>
+                    <h1 class="description center-align post-title">字节面试题(还附加了别的)</h1>
                 </div>
             </div>
         </div>
@@ -542,8 +542,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/react%E9%9D%A2%E8%AF%95%E9%A2%98/">
-                                <span class="chip bg-color">react面试题</span>
+                            <a href="/tags/%E9%9D%A2%E8%AF%95%E9%A2%98/">
+                                <span class="chip bg-color">面试题</span>
                             </a>
                         
                     </div>
@@ -554,8 +554,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/react%E5%A4%8D%E4%B9%A0/" class="post-category">
-                                react复习
+                            <a href="/categories/%E9%9D%A2%E8%AF%95%E9%A2%98/" class="post-category">
+                                面试题
                             </a>
                         
                     </div>
@@ -567,21 +567,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-06-04
+                    2021-06-01
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2021-06-04
+                    2021-06-21
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    68
+                    3.8k
                 </div>
                 
 
@@ -603,8 +603,248 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h4 id="render函数中return如果没有使用-会有什么问题？"><a href="#render函数中return如果没有使用-会有什么问题？" class="headerlink" title="render函数中return如果没有使用()会有什么问题？"></a>render函数中return如果没有使用()会有什么问题？</h4><p>在不换行的情况下没有问题，换行的话就需要用()包住</p>
-<p>原因在于，JSX转为js后，js会在每行自动加<code>';'</code>，如果return后换行了，那么就会变成return;</p>
+                <h3 id="1-粘性定位有什么特点，绝对定位是相对什么边界进行定位"><a href="#1-粘性定位有什么特点，绝对定位是相对什么边界进行定位" class="headerlink" title="1. 粘性定位有什么特点，绝对定位是相对什么边界进行定位"></a>1. 粘性定位有什么特点，绝对定位是相对什么边界进行定位</h3><blockquote>
+<p>绝对行为元素是以相对定位元素的border内边缘为基准进行定位的，</p>
+<p>粘性定位的特点是，滚动到一定位置时，效果跟fixed一样</p>
+</blockquote>
+<h3 id="2-先是CSS部分，问position有哪些常用的值"><a href="#2-先是CSS部分，问position有哪些常用的值" class="headerlink" title="2. 先是CSS部分，问position有哪些常用的值"></a>2. 先是CSS部分，问position有哪些常用的值</h3><blockquote>
+<p>relative，absolute，static，sticky，fixed</p>
+</blockquote>
+<h3 id="3-隐藏一个元素有哪些方法"><a href="#3-隐藏一个元素有哪些方法" class="headerlink" title="3. 隐藏一个元素有哪些方法"></a>3. 隐藏一个元素有哪些方法</h3><blockquote>
+<p>可以将opacity设为0、将visibility设为hidden、将display设为none或者将position设为absolute然后将位置设到不可见区域等。</p>
+<p><code>display = 'none'</code></p>
+</blockquote>
+<h3 id="4-display：none和opcity：0在事件响应上有什么区别"><a href="#4-display：none和opcity：0在事件响应上有什么区别" class="headerlink" title="4. display：none和opcity：0在事件响应上有什么区别"></a>4. display：none和opcity：0在事件响应上有什么区别</h3><p>   <img src="/medias/loading.gif" data-original="https://cdn.jsdelivr.net/gh/woyaojinzuzhi/picgo/images/image-20210609103740835.png" alt="image-20210609103740835"></p>
+<h3 id="5-什么是事件委托"><a href="#5-什么是事件委托" class="headerlink" title="5. 什么是事件委托"></a>5. 什么是事件委托</h3><p>   先从原理上说，JS事件执行有3个阶段：</p>
+<blockquote>
+<ol>
+<li>捕获阶段</li>
+<li>执行阶段</li>
+<li>冒泡阶段</li>
+</ol>
+<p>只有两个阶段能同时执行（捕获 + 执行、或者 执行 + 冒泡 ）</p>
+</blockquote>
+<p>   个人理解上来说，捕获加执行就是从外到内，例如：div &gt; ul &gt; li</p>
+<p>   执行加冒泡就是从内到外，例如：li &gt; ul &gt; div</p>
+<p>   给父元素绑定事件监听，通过判断内部点击的位置再给对应的DOM附上操作。</p>
+<p>   当然在使用event时要做兼容性处理：</p>
+<p>   <img src="/medias/loading.gif" data-original="https://cdn.jsdelivr.net/gh/woyaojinzuzhi/picgo/images/image-20210610105256644.png" alt="image-20210610105256644"></p>
+<p>   写法：</p>
+<p>   <img src="/medias/loading.gif" data-original="https://cdn.jsdelivr.net/gh/woyaojinzuzhi/picgo/images/image-20210610205503904.png" alt="image-20210610205503904"></p>
+<p>   <img src="/medias/loading.gif" data-original="https://cdn.jsdelivr.net/gh/woyaojinzuzhi/picgo/images/image-20210610205941692.png" alt="image-20210610205941692"></p>
+<h3 id="6-除了for…of还有什么方法可以遍历字符串"><a href="#6-除了for…of还有什么方法可以遍历字符串" class="headerlink" title="6. 除了for…of还有什么方法可以遍历字符串"></a>6. 除了for…of还有什么方法可以遍历字符串</h3><p>   <img src="/medias/loading.gif" data-original="https://cdn.jsdelivr.net/gh/woyaojinzuzhi/picgo/images/image-20210610101125752.png" alt="image-20210610101125752"></p>
+<h3 id="7-浏览器缓存有哪些，通常缓存有哪几种"><a href="#7-浏览器缓存有哪些，通常缓存有哪几种" class="headerlink" title="7. 浏览器缓存有哪些，通常缓存有哪几种"></a>7. 浏览器缓存有哪些，通常缓存有哪几种</h3><p>   1、http缓存是基于HTTP协议的浏览器文件级缓存机制。<br>   2、websql这种方式只有较新的chrome浏览器支持，并以一个独立规范形式出现<br>   3、indexDB 是一个为了能够在客户端存储可观数量的结构化数据，并且在这些数据上使用索引进行高性能检索的 API<br>   4、Cookie一般网站为了辨别用户身份、进行session跟踪而储存在用户本地终端上的数据（通常经过加密）<br>   5、Localstorage，html5的一种新的本地缓存方案，目前用的比较多，一般用来存储ajax返回的数据，加快下次页面打开时的渲染速度<br>   6、Sessionstorage和localstorage类似，但是浏览器关闭则会全部删除，api和localstorage相同，实际项目中使用较少。<br>   7、application cache 是将大部分图片资源、js、css等静态资源放在manifest文件配置中<br>   8、cacheStorage是在ServiceWorker的规范中定义的，可以保存每个serverWorker申明的cache对象<br>   9、flash缓存 这种方式基本不用，这一方法主要基于flash有读写浏览器端本地目录的功能</p>
+<h3 id="8-常用状态码"><a href="#8-常用状态码" class="headerlink" title="8. 常用状态码"></a>8. 常用状态码</h3><p>   1xx 【消息】服务器收到请求，需要请求者继续执行操作<br>   2xx 【成功】请求已成功被服务器接收、理解、并接受。<br>   3xx 【重定向】客户端需要采取进一步的操作以完成请求<br>   4xx 【客户端请求错误】客户端错误，请求包含语法错误或无法完成请求<br>   5xx 【服务器错误】服务器在处理请求的过程中发生了错误</p>
+<ul>
+<li>200 OK 请求处理成功，返回相关信息</li>
+<li>204 No Content 请求处理成功，但响应报文没有主题返回</li>
+<li>301 Moved Permanently 永久性重定向。 请求的资源已经被分配到新的url</li>
+<li>302 Found 临时性重定向</li>
+<li>400 Bad Request 请求报文存在语法错误。需要修正请求报文后再次发送请求</li>
+<li>403 Forbidden 请求资源的访问被服务器拒绝。服务器没必要给出拒绝的理由。</li>
+<li>404 Not Found 服务器上无法找到被请求的资源</li>
+<li>500 Internet Server Error 服务器在执行请求时发生了错误。可能是Web应用存在的 bug 或者临时的障碍</li>
+<li>503 Service Unavailable 服务器处于超载或者故障状态。如果事先得知何时可以解决故障，可以将时间写入Retry-after首部字段再返回给客户端。</li>
+</ul>
+<h3 id="9-浏览器的渲染原理"><a href="#9-浏览器的渲染原理" class="headerlink" title="9. 浏览器的渲染原理"></a>9. 浏览器的渲染原理</h3><ol>
+<li><p>浏览器会将HTML解析成一个DOM树，DOM 树的构建过程是一个深度遍历过程：当前节点的所有子节点都构建好后才会去构建当前节点的下一个兄弟节点。</p>
+</li>
+<li><p>将CSS解析成 CSS Rule Tree 。</p>
+</li>
+<li><p>根据DOM树和CSSOM来构造 Rendering Tree。注意：Rendering Tree 渲染树并不等同于 DOM 树，因为一些像Header或display:none的东西就没必要放在渲染树中了。</p>
+<p>   有了Render Tree，浏览器已经能知道网页中有哪些节点、各个节点的CSS定义以及他们的从属关系。下一步操作称之为layout，顾名思义就是计算出每个节点在屏幕中的位置。</p>
+<p>   再下一步就是绘制，即遍历render树，并使用UI后端层绘制每个节点。</p>
+</li>
+<li><p>改变原数组的方法</p>
+<ul>
+<li>pop()：删除数组最后一个元素，并返回该元素</li>
+<li>push()：在数组尾部添加元素，并返回更新后的数组长度</li>
+<li>shift()：删除数组的第一个元素，并返回该元素</li>
+<li>unshift()：在数组第一位添加元素，并返回更新后的数组长度</li>
+<li>sort()：对数组排序（按字符ASCII进行排序），也可添加回调函数按照想要的规则排序</li>
+<li>reverse()：数组反转</li>
+<li>splice(index, howmany, 新数据)：返回被删除元素所组成的数组。</li>
+<li>copyWithin(a,b,c)：a为复制到的制定位置，b为复制目标的起始位置，如果c不填则默认复制到最后，并且复制从b位置到最后的全部内容，再从a位置开始添加。</li>
+<li>fill(a,b): a为添加的内容，b为替换的其实位置。用一个自定义数据去替换数组中的元素。返回值：发生改变后的数组</li>
+</ul>
+</li>
+</ol>
+<h3 id="10-浏览器访问URL经历的过程"><a href="#10-浏览器访问URL经历的过程" class="headerlink" title="10. 浏览器访问URL经历的过程"></a>10. 浏览器访问URL经历的过程</h3><p><a target="_blank" rel="noopener" href="https://blog.csdn.net/g291976422/article/details/88984859">相关文章</a><br>    客户端获取URL - &gt; DNS解析 - &gt; TCP连接 - &gt;发送HTTP请求 - &gt;服务器处理请求 - &gt;返回报文 - &gt;浏览器解析渲染页面 - &gt; TCP断开连接。</p>
+<ol>
+<li><p>DNS解析</p>
+<p><a target="_blank" rel="noopener" href="https://www.cnblogs.com/qingdaofu/p/7399670.html">相关文章</a>详解递归和迭代。 </p>
+<p><strong>递归</strong>：由客户端向本地域名服务器发送请求的过程，查询不到ip，就由本地域名服务器以DNS客户的身份发送。</p>
+<p><strong>迭代</strong>：由本地域名服务器，向根域名服务器发送的查询请求的过程。</p>
+<p>将域名转换为相应的IP地址的过程。<br>先搜索浏览器自身缓存的DNS记录。浏览器自身自带一层DNS缓存。<br>如果浏览器缓存中没有找到需要的记录或者记录已经过期，则搜索hosts文件和操作系统缓存。<br>如果在hosts文件和操作系统缓存中没有找到需要的记录或记录已经过期，则向域名解析服务器发送解析请求。<br>如果域名解析服务器也没有该域名的记录，则开始递归+迭代解析。</p>
+</li>
+<li><p>TCP请求</p>
+<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_44170221/article/details/105033456">TCP的三次握手</a></p>
+</li>
+<li><p>HTTP请求</p>
+<p>HTTP请求报文由三部分组成：请求行，请求报头和请求正文。</p>
+<p>格式如下：<br><code>Method Request-URL HTTP-Version CRLF</code></p>
+<pre class=" language-js"><code class="language-js">eg<span class="token punctuation">:</span> GET index<span class="token punctuation">.</span>html HTTP<span class="token operator">/</span><span class="token number">1.1</span>
+</code></pre>
+<p>常用方法：GET，POST，PUT，DELETE，OPTIONS，HEAD。</p>
+<p> 同时引申出来一个问题：<br> <strong>GET和POST请求有什么区别？</strong><br> <a target="_blank" rel="noopener" href="https://www.cnblogs.com/logsharing/p/8448446.html">相关文章</a></p>
+<blockquote>
+<p>最直观的就是GET把参数放在URL中，POST通过request body传递参数</p>
+<p>GET在浏览器回退时是无害的，而POST会再次提交请求。</p>
+<p>GET产生的URL地址可以被Bookmark，而POST不可以。</p>
+<p>GET请求会被浏览器主动cache，而POST不会，除非手动设置。</p>
+<p>GET请求只能进行url编码（ASCII），而POST支持多种编码方式。</p>
+<p>GET请求的参数会被完整地保留在浏览器历史记录里，而POST中的参数不会被保留。</p>
+<p>GET请求在URL中传递的参数是有长度限制的。</p>
+<p>GET更不安全，因为参数直接暴露在URL上，所以不能用来传递敏感信息。</p>
+</blockquote>
+<p> <strong>装逼开始</strong>：</p>
+<blockquote>
+<p>其实GET和POST<strong>本质</strong>上没有区别，都是HTTP协议中的两种发送请求的方法。</p>
+<p>HTTP是基于TCP/IP的关于数据如何在万维网中如何通信的协议。</p>
+<p>由此可得，HTTP的底层是TCP/IP，那么GET和POST的底层也是。<strong>GET和POST本质上就是TCP链接。</strong>所以俩用法可以互换，但是服务器接不接收就另说了。</p>
+<p>那么，其实GET和POST的用法只是局限于客户端和服务端的要求，才写成特定的写法。</p>
+<p><strong>GET和POST还有一个重大区别：</strong></p>
+<p><mark>GET产生一个TCP数据包；POST产生两个TCP数据包。</mark></p>
+<p>对于GET方式的请求，浏览器会把http header和data一并发送出去，服务器响应200（返回数据）；</p>
+<p>而对于POST，浏览器先发送header，服务器响应100 continue，浏览器再发送data，服务器响应200 ok（返回数据）。</p>
+<p>当然两次TCP在验证数据包完整性上，有很大的有点。同样，也并不是所有浏览器都会在POST中发送两次包，Firefox就只发送一次。</p>
+</blockquote>
+</li>
+<li><p>负载均衡</p>
+<p>当一台服务器无法支持大量的用户访问时，将用户分摊到两个或多个服务器上的方法叫负载均衡。   </p>
+</li>
+<li><p>浏览器渲染</p>
+<p>浏览器根据页面内容，生成DOM Tree。根据CSS内容，生成CSS Rule Tree(规则树)。调用JS执行引擎执行JS代码。</p>
+<p>根据DOM Tree和CSS Rule Tree生成Render Tree(呈现树)。</p>
+<p>根据Render Tree渲染网页。</p>
+</li>
+<li><p>网页静态资源加载</p>
+</li>
+</ol>
+<h3 id="11-强缓存与协商缓存"><a href="#11-强缓存与协商缓存" class="headerlink" title="11. 强缓存与协商缓存"></a>11. 强缓存与协商缓存</h3><p><a target="_blank" rel="noopener" href="http://caibaojian.com/browser-cache.html">相关文章</a></p>
+<h3 id="12-防抖和节流"><a href="#12-防抖和节流" class="headerlink" title="12. 防抖和节流"></a>12. 防抖和节流</h3><p><a target="_blank" rel="noopener" href="https://juejin.cn/post/6893748375372431368">相关文章</a></p>
+<p>基本概念：<br>    防抖：设置一个时间间隔5秒，当事件触发的时间间隔超过5秒，（回调）函数才会执行，如果5秒内事件再次被触发，则刷新这五秒。<br>    节流：在指定的时间间隔内，只允许函数执行一次。</p>
+<h3 id="13-对BFC规范的理解"><a href="#13-对BFC规范的理解" class="headerlink" title="13. 对BFC规范的理解"></a>13. 对BFC规范的理解</h3><p><a target="_blank" rel="noopener" href="https://blog.csdn.net/sinat_36422236/article/details/88763187">相关文章</a></p>
+<p>BFC全称是Block Formatting Context，格式化上下文。</p>
+<p>CSS2.1规范定义的，关于CSS渲染定位的概念。</p>
+<p>BFC是页面CSS 视觉渲染的一部分，用于决定块盒子的布局及浮动相互影响范围的一个区域。</p>
+<p>BFC的一个最重要的效果是，让处于BFC内部的元素与外部的元素相互隔离，使内外元素的定位不会相互影响。</p>
+<p>利用BFC可以闭合浮动，防止与浮动元素重叠。</p>
+<h3 id="14-constructor和super必须使用么？"><a href="#14-constructor和super必须使用么？" class="headerlink" title="14. constructor和super必须使用么？"></a>14. constructor和super必须使用么？</h3><p>在ES5的继承中，先创建子类的实例对象this，然后再将父类的方法添加到this上，而ES6采用的是先创建父类的实例this(故要先调用super()方法)，然后再用子类的构造函数修改this<br>**constructor()**，这是ES6对类的默认方法，通过new命令生成对象实例自动调用的方法。并且，该方法是类中必须要有的，如果没有显示定义，则会默认添加空的constructor()方法。<br>**super()**，在class方法中，继承是使用extends关键字来实现继承的。子类必须在constructor()中调用super()方法，否则新建实例时会报错。报错的原因是，子类是没有自己的this对象的，它只能继承父类的this对象，然后对其进行加工，而super()就是将父类中的this对象继承给子类的。没有super，子类就得不到this对象。</p>
+<p><img src="/medias/loading.gif" data-original="https://cdn.jsdelivr.net/gh/woyaojinzuzhi/picgo/images/image-20210617214157302.png" alt="image-20210617214157302"></p>
+<h3 id="15-linux查找nginx所在目录"><a href="#15-linux查找nginx所在目录" class="headerlink" title="15.linux查找nginx所在目录"></a>15.linux查找nginx所在目录</h3><p>ps -ef | grep nginx</p>
+<h3 id="16-let，const，class会提升么"><a href="#16-let，const，class会提升么" class="headerlink" title="16.let，const，class会提升么"></a>16.let，const，class会提升么</h3><p>经过我看过很多文章和视频总结：</p>
+<blockquote>
+<p>let，const和class与var不同，不同的点在于，其实都可以算是声明提升，<strong>但是</strong>这个提示不同的点在于：</p>
+<ol>
+<li>var的提升，是在提升的时候已经初始化了，初始化的值为undefined，原来的赋值还留在原地。</li>
+<li>let的提升，则是本身提升了，但并没有初始化，初始化的过程和赋值的过程基本同步，如果只是<code>let a;</code>的话，那么就会赋值为undefined。</li>
+</ol>
+<pre class=" language-js"><code class="language-js"><span class="token keyword">var</span> a <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+<span class="token keyword">function</span> <span class="token function">foo</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">let</span> a<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token function">foo</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token comment" spellcheck="true">// 以上这段代码报错，Cannot access 'a' before initialization</span>
+<span class="token comment" spellcheck="true">// 就是因为let提升了，但没有初始化</span>
+<span class="token keyword">var</span> a <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+<span class="token keyword">function</span> <span class="token function">foo</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">let</span> a<span class="token punctuation">;</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token function">foo</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token comment" spellcheck="true">// undefined</span>
+</code></pre>
+</blockquote>
+<h3 id="17-上一题的进阶，变量声明提升"><a href="#17-上一题的进阶，变量声明提升" class="headerlink" title="17.上一题的进阶，变量声明提升"></a>17.上一题的进阶，变量声明提升</h3><p>在试验中发现，假如这样写：</p>
+<pre class=" language-js"><code class="language-js"><span class="token keyword">var</span> foo <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+<span class="token keyword">function</span> <span class="token function">foo</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'ss'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token function">foo</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// 这里会报错，foo is not a function</span>
+</code></pre>
+<p>为什么会报错呢，那接下来这段代码呢：</p>
+<pre class=" language-js"><code class="language-js"><span class="token function">foo</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment" spellcheck="true">// ss</span>
+<span class="token keyword">var</span> foo <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+<span class="token keyword">function</span> <span class="token function">foo</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'ss'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token function">foo</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// foo is not a function</span>
+</code></pre>
+<p>其实细心的人不难发现，在第二段代码中，<code>var foo = 1;</code>声明提升了，但是这时只是提升了<code>foo</code>，并付了初始值<code>undefined</code>，在后面<code>function foo(){}</code>这一步中，函数整体提升了，所以第一个<code>foo()</code>可以执行，并输出ss。第二个<code>foo()</code>报错，则是因为foo被重新赋值为1了，所以并不是function。</p>
+<p>那么在第一段代码里，是因为<code>var foo = 1;</code>时先提升<code>var foo；</code>然后<code>function foo(){}</code>执行覆盖<code>foo</code>，这时就跟作用域和上下文有关了，正常来说都是先创建全局执行上下文，然后处理所有声明，处理名字重复的内容，再创建绑定（例如：var声明的内容初始化为undefined、function初始化为新建函数对象等），最后执行语句。</p>
+<p>所以在第一段代码的执行过程就是：<code>var foo; -&gt; function foo() { console.log('ss') } -&gt; foo = 1;</code>。所以最终foo并没有被function覆盖掉，还是被赋值了。</p>
+<h3 id="18-在循环中，使用let为什么不会像var一样输出5个5"><a href="#18-在循环中，使用let为什么不会像var一样输出5个5" class="headerlink" title="18.在循环中，使用let为什么不会像var一样输出5个5"></a>18.在循环中，使用let为什么不会像var一样输出5个5</h3><p>例子：</p>
+<pre class=" language-js"><code class="language-js"><span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">var</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> <span class="token number">5</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token function">setTimeout</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+<span class="token comment" spellcheck="true">// 输出5个5</span>
+</code></pre>
+<p>因为用let时，会为每个迭代创建一个文本环境，所以每次循环都会有对应的值，而不是去拿到全局变量里面的i。</p>
+<p>改变：</p>
+<pre class=" language-js"><code class="language-js"><span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">let</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> <span class="token number">5</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token function">setTimeout</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+<span class="token comment" spellcheck="true">// 输出0,1,2,3,4</span>
+</code></pre>
+<h3 id="19-JS实现getElementByClassName"><a href="#19-JS实现getElementByClassName" class="headerlink" title="19.JS实现getElementByClassName"></a>19.JS实现getElementByClassName</h3><p>当然这一题是为了防止IE8以下的浏览器不能使用的：</p>
+<p>同一种方法的第一个：</p>
+<pre class=" language-js"><code class="language-js"> <span class="token keyword">function</span> <span class="token function">getElementByCName</span><span class="token punctuation">(</span>cName<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">var</span> result <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token keyword">var</span> lis <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">getElementsByTagName</span><span class="token punctuation">(</span><span class="token string">'*'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">var</span> index <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> index <span class="token operator">&lt;</span> lis<span class="token punctuation">.</span>length<span class="token punctuation">;</span> index<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>lis<span class="token punctuation">[</span>index<span class="token punctuation">]</span><span class="token punctuation">.</span>className <span class="token operator">==</span> cName<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            result<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>lis<span class="token punctuation">[</span>index<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">return</span> result<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">var</span> result <span class="token operator">=</span> <span class="token function">getElementByCName</span><span class="token punctuation">(</span><span class="token string">'lis'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">var</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> result<span class="token punctuation">.</span>length<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    result<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">.</span>style<span class="token punctuation">.</span>background <span class="token operator">=</span> <span class="token string">"green"</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>result<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p>同一种方法的第二个：</p>
+<pre class=" language-js"><code class="language-js">document<span class="token punctuation">.</span>getElementsByClassName <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span>name<span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token keyword">try</span><span class="token punctuation">{</span>
+        <span class="token keyword">var</span> tag <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">getElementsByTagName</span><span class="token punctuation">(</span><span class="token string">"*"</span><span class="token punctuation">)</span> <span class="token operator">||</span> document<span class="token punctuation">.</span>all<span class="token punctuation">;</span>
+        <span class="token keyword">var</span> array <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">var</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> tag<span class="token punctuation">.</span>length<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">if</span><span class="token punctuation">(</span>tag<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">.</span>className <span class="token operator">==</span> name<span class="token punctuation">)</span><span class="token punctuation">{</span>
+                array<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>tag<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">;</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span>array<span class="token punctuation">.</span>length <span class="token operator">>=</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+            <span class="token keyword">return</span> array<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">return</span> array<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token keyword">catch</span><span class="token punctuation">(</span>e<span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token punctuation">}</span>
+
+<span class="token punctuation">}</span>
+</code></pre>
+<p>还有一种应该是算法去实现，我的想法是：</p>
+<blockquote>
+<ol>
+<li><p>先去把整个页面都转化为字符串</p>
+</li>
+<li><p>然后利用正则表达式，去找到<code>&lt;div class="name"&gt;</code>的内容，截取其之后的内容</p>
+</li>
+<li><p>这时设置一个长度<code>length = 0</code>，找到每一个<code>&lt;div</code>开头的都加一，然后找到每一个<code>&lt;/div&gt;</code>都减一。</p>
+</li>
+<li><p>知道length被减为零，则截取其前的全部内容。</p>
+</li>
+</ol>
+</blockquote>
+<h3 id="20-css选择器"><a href="#20-css选择器" class="headerlink" title="20.css选择器"></a>20.css选择器</h3><pre class=" language-css"><code class="language-css">div p <span class="token comment" spellcheck="true">/*div内的子元素p或孙子元素p等等*/</span>
+div > p <span class="token comment" spellcheck="true">/*仅div内的子元素p*/</span>
+div + p <span class="token comment" spellcheck="true">/*选择紧挨着&lt;div>在其之后的一个同级&lt;p>标签*/</span>
+div ~ p <span class="token comment" spellcheck="true">/*所有和&lt;div>同级，且在&lt;div>之后的&lt;p>标签*/</span>
+</code></pre>
 
                 
             </div>
@@ -631,7 +871,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://www.xyljj.top/2021/06/04/react-view/">https://www.xyljj.top/2021/06/04/react-view/</a>
+                    <a href="https://www.xyljj.top/2021/06/01/zi-jie-mian-shi-ti/">https://www.xyljj.top/2021/06/01/zi-jie-mian-shi-ti/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -669,8 +909,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/react%E9%9D%A2%E8%AF%95%E9%A2%98/">
-                                    <span class="chip bg-color">react面试题</span>
+                                <a href="/tags/%E9%9D%A2%E8%AF%95%E9%A2%98/">
+                                    <span class="chip bg-color">面试题</span>
                                 </a>
                             
                         </div>
@@ -1112,13 +1352,13 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2021/06/06/flex-bu-ju/">
+                <a href="/2021/06/01/scope/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/loading.gif" data-original="/medias/featureimages/22.jpg" class="responsive-img" alt="Flex布局">
+                        <img src="/medias/loading.gif" data-original="/medias/featureimages/1.jpg" class="responsive-img" alt="作用域scope">
                         
-                        <span class="card-title">Flex布局</span>
+                        <span class="card-title">作用域scope</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -1129,14 +1369,14 @@
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-06-06
+                            <i class="far fa-clock fa-fw icon-date"></i>2021-06-01
                         </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/CSS%E5%A4%8D%E4%B9%A0/" class="post-category">
-                                    CSS复习
+                            <a href="/categories/JS%E5%9F%BA%E7%A1%80/" class="post-category">
+                                    JS基础
                                 </a>
                             
                             
@@ -1146,8 +1386,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E9%98%AE%E4%B8%80%E5%B3%B0%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/">
-                        <span class="chip bg-color">阮一峰个人博客</span>
+                    <a href="/tags/%E4%BD%9C%E7%94%A8%E5%9F%9F/">
+                        <span class="chip bg-color">作用域</span>
                     </a>
                     
                 </div>
@@ -1161,13 +1401,13 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2021/06/02/ge-lei-mian-shi-ti/">
+                <a href="/2021/05/31/prototype/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/loading.gif" data-original="/medias/featureimages/19.jpg" class="responsive-img" alt="其他面试题">
+                        <img src="/medias/loading.gif" data-original="/medias/featureimages/8.jpg" class="responsive-img" alt="原型链prototype">
                         
-                        <span class="card-title">其他面试题</span>
+                        <span class="card-title">原型链prototype</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -1178,14 +1418,14 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-06-02
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-05-31
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E9%9D%A2%E8%AF%95%E9%A2%98/" class="post-category">
-                                    面试题
+                            <a href="/categories/JS%E5%9F%BA%E7%A1%80/" class="post-category">
+                                    JS基础
                                 </a>
                             
                             
@@ -1195,8 +1435,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E9%9D%A2%E8%AF%95%E9%A2%98/">
-                        <span class="chip bg-color">面试题</span>
+                    <a href="/tags/%E5%8E%9F%E5%9E%8B%E9%93%BE/">
+                        <span class="chip bg-color">原型链</span>
                     </a>
                     
                 </div>

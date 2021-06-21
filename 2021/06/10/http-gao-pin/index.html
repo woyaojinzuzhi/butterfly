@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="HTML,CSS,JavaScript,JQuery,React,NodeJs,Vue.js等">
+    <meta name="keywords" content="【高频】HTTP面试题, HTML,CSS,JavaScript,JQuery,React,NodeJs,Vue.js等">
     <meta name="description" content="专注于Web,前端技术,分享生活,分享知识">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Mr.李还行</title>
+    <title>【高频】HTTP面试题 | Mr.李还行</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -421,12 +421,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/0.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/19.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title"></h1>
+                    <h1 class="description center-align post-title">【高频】HTTP面试题</h1>
                 </div>
             </div>
         </div>
@@ -540,12 +540,25 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/tags/%E5%85%AB%E8%82%A1%E6%96%87/">
+                                <span class="chip bg-color">八股文</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/%E5%85%AB%E8%82%A1%E6%96%87/" class="post-category">
+                                八股文
+                            </a>
+                        
+                    </div>
                     
                 </div>
             </div>
@@ -554,21 +567,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-06-21
+                    2021-06-10
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2021-06-09
+                    2021-06-21
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.1k
+                    1.6k
                 </div>
                 
 
@@ -653,6 +666,25 @@
 <p><strong>Warning：</strong>警告实体可能存在的问题。</p>
 <p><strong>WWW-Authenticate：</strong>表明客户端请求实体应该使用的授权方案。</p>
 </blockquote>
+<h1 id="HTTP与HTTPS"><a href="#HTTP与HTTPS" class="headerlink" title="HTTP与HTTPS"></a>HTTP与HTTPS</h1><p><a target="_blank" rel="noopener" href="https://www.cnblogs.com/aidixie/p/11764181.html">HTTP与HTTPS面试题</a></p>
+<h3 id="http与https的基本概念与它们的区别"><a href="#http与https的基本概念与它们的区别" class="headerlink" title="http与https的基本概念与它们的区别"></a>http与https的基本概念与它们的区别</h3><p>http的中文叫做超文本传输协议,它负责完成客户端到服务端的一系列操作,是专门用来传输注入HTML的超媒体文档等web内容的协议,它是基于传输层的TCP协议的应用层协议</p>
+<p>https:https是基于安全套接字层（ssl）的http协议,也可以理解为是http+ssl/tls(数字证书)的组合</p>
+<p>http和https的区别:</p>
+<ul>
+<li>HTTP 的 URL 以 http:// 开头，而 HTTPS 的 URL 以 https:// 开头</li>
+<li>HTTP 是不安全的，而 HTTPS 是安全的</li>
+<li>HTTP 标准端口是 80 ，而 HTTPS 的标准端口是 443</li>
+<li>在 OSI 网络模型中，HTTPS的加密是在传输层完成的,因为SSL是位于传输层的,TLS的前身是SSL,所以同理</li>
+<li>HTTP无需认证证书,而https需要认证证书 </li>
+</ul>
+<h3 id="HTTPS工作原理"><a href="#HTTPS工作原理" class="headerlink" title="HTTPS工作原理"></a>HTTPS工作原理</h3><ul>
+<li>首先服务端给客户端传输证书,这个证书就是公钥,只是包含了很多的信息,比如说证书的办法机构,证书的过期时间</li>
+<li>客户端进行证书的解析,比如说验证办法机构,过期时间,如果发现没有任何问题,就生成一个随机值(私钥),然后用证书对这个私钥进行加密,并发送给服务端</li>
+<li>服务端使用私钥将这个信息进行解密,得到客户端的私钥,然后客户端和服务端就可以通过这个私钥进行通信了</li>
+<li>服务端将消息进行对称加密(简单来说就是讲消息和私钥进行混合,除非知道私钥否则服务进行解密),私钥正好只有客户端和服务端知道,所以信息就比较安全了</li>
+<li>服务端将进行对称加密后的消息进行传送</li>
+<li>客户端使用私钥进行信息的解密</li>
+</ul>
 
                 
             </div>
@@ -679,7 +711,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://www.xyljj.top/2021/06/21/http-gao-pin/">https://www.xyljj.top/2021/06/21/http-gao-pin/</a>
+                    <a href="https://www.xyljj.top/2021/06/10/http-gao-pin/">https://www.xyljj.top/2021/06/10/http-gao-pin/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -716,7 +748,11 @@
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
+                            
+                                <a href="/tags/%E5%85%AB%E8%82%A1%E6%96%87/">
+                                    <span class="chip bg-color">八股文</span>
+                                </a>
+                            
                         </div>
                     
                 </div>
@@ -1156,13 +1192,13 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2021/06/21/di-er-bu-fen/">
+                <a href="/2021/06/11/bi-bao/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/loading.gif" data-original="/medias/featureimages/0.jpg" class="responsive-img" alt="">
+                        <img src="/medias/loading.gif" data-original="/medias/featureimages/0.jpg" class="responsive-img" alt="【高频】闭包">
                         
-                        <span class="card-title"></span>
+                        <span class="card-title">【高频】闭包</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -1173,15 +1209,27 @@
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-06-21
+                            <i class="far fa-clock fa-fw icon-date"></i>2021-06-11
                         </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            Mr.李还行
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/JS%E5%9F%BA%E7%A1%80/" class="post-category">
+                                    JS基础
+                                </a>
+                            
                             
                         </span>
                     </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E9%97%AD%E5%8C%85/">
+                        <span class="chip bg-color">闭包</span>
+                    </a>
+                    
                 </div>
                 
             </div>
@@ -1193,13 +1241,13 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2021/06/04/react-view/">
+                <a href="/2021/06/06/gao-pin-this/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/loading.gif" data-original="/medias/featureimages/10.jpg" class="responsive-img" alt="react面试题">
+                        <img src="/medias/loading.gif" data-original="/medias/featureimages/10.jpg" class="responsive-img" alt="【高频】this">
                         
-                        <span class="card-title">react面试题</span>
+                        <span class="card-title">【高频】this</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -1210,14 +1258,14 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-06-04
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-06-06
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/react%E5%A4%8D%E4%B9%A0/" class="post-category">
-                                    react复习
+                            <a href="/categories/JS%E5%9F%BA%E7%A1%80/" class="post-category">
+                                    JS基础
                                 </a>
                             
                             
@@ -1227,8 +1275,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/react%E9%9D%A2%E8%AF%95%E9%A2%98/">
-                        <span class="chip bg-color">react面试题</span>
+                    <a href="/tags/this/">
+                        <span class="chip bg-color">this</span>
                     </a>
                     
                 </div>

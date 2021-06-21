@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="HTML,CSS,JavaScript,JQuery,React,NodeJs,Vue.js等">
+    <meta name="keywords" content="算法类题型, HTML,CSS,JavaScript,JQuery,React,NodeJs,Vue.js等">
     <meta name="description" content="专注于Web,前端技术,分享生活,分享知识">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Mr.李还行</title>
+    <title>算法类题型 | Mr.李还行</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -426,7 +426,7 @@
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title"></h1>
+                    <h1 class="description center-align post-title">算法类题型</h1>
                 </div>
             </div>
         </div>
@@ -540,12 +540,25 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/tags/%E5%9F%BA%E7%A1%80%E7%AE%97%E6%B3%95/">
+                                <span class="chip bg-color">基础算法</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/%E7%AE%97%E6%B3%95/" class="post-category">
+                                算法
+                            </a>
+                        
+                    </div>
                     
                 </div>
             </div>
@@ -554,21 +567,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-06-21
+                    2021-06-16
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2021-06-09
+                    2021-06-21
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    662
+                    264
                 </div>
                 
 
@@ -590,72 +603,72 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="默认绑定与隐式绑定"><a href="#默认绑定与隐式绑定" class="headerlink" title="默认绑定与隐式绑定"></a>默认绑定与隐式绑定</h1><pre class=" language-js"><code class="language-js"><span class="token keyword">function</span> <span class="token function">foo</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> 
-    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>bar<span class="token punctuation">)</span><span class="token punctuation">;</span> 
-<span class="token punctuation">}</span> 
-<span class="token keyword">var</span> bar <span class="token operator">=</span> <span class="token string">"bar1"</span><span class="token punctuation">;</span> 
-<span class="token keyword">var</span> o2 <span class="token operator">=</span> <span class="token punctuation">{</span>bar<span class="token punctuation">:</span> <span class="token string">"bar2"</span><span class="token punctuation">,</span> foo<span class="token punctuation">:</span> foo<span class="token punctuation">}</span><span class="token punctuation">;</span> 
-<span class="token keyword">var</span> o3 <span class="token operator">=</span> <span class="token punctuation">{</span>bar<span class="token punctuation">:</span> <span class="token string">"bar3"</span><span class="token punctuation">,</span> foo<span class="token punctuation">:</span> foo<span class="token punctuation">}</span><span class="token punctuation">;</span> 
-<span class="token function">foo</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>            <span class="token comment" spellcheck="true">// "bar1" – 默认绑定</span>
-o2<span class="token punctuation">.</span><span class="token function">foo</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>          <span class="token comment" spellcheck="true">// "bar2" – 隐式绑定</span>
-o3<span class="token punctuation">.</span><span class="token function">foo</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>          <span class="token comment" spellcheck="true">// "bar3" – 隐式绑定</span>
-</code></pre>
-<p>foo()这种调用方法，就是默认绑定。如果在非严格模式下，this就是全局对象，如果在严格模式下，this就会使undefined。</p>
-<p>o2.foo()和o3.foo()这两种调用方法，都是隐式绑定。foo是作为o2和o3的方法而调用的，谁调用foo，this就指向谁。（<strong>不要搞混变量和this</strong>）。</p>
-<h1 id="显式绑定"><a href="#显式绑定" class="headerlink" title="显式绑定"></a>显式绑定</h1><pre class=" language-js"><code class="language-js"><span class="token keyword">function</span> <span class="token function">foo</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> 
-console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>bar<span class="token punctuation">)</span><span class="token punctuation">;</span> 
-<span class="token punctuation">}</span> 
-<span class="token keyword">var</span> bar <span class="token operator">=</span> <span class="token string">"bar1"</span><span class="token punctuation">;</span> 
-<span class="token keyword">var</span> obj <span class="token operator">=</span> <span class="token punctuation">{</span>bar<span class="token punctuation">:</span> <span class="token string">"bar2"</span><span class="token punctuation">}</span><span class="token punctuation">;</span> 
-
-<span class="token function">foo</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>          <span class="token comment" spellcheck="true">// "bar1"   默认绑定</span>
-foo<span class="token punctuation">.</span><span class="token function">call</span><span class="token punctuation">(</span>obj<span class="token punctuation">)</span><span class="token punctuation">;</span>     <span class="token comment" spellcheck="true">// "bar2"  显式绑定，使用obj作为"this"</span>
-</code></pre>
-<p>如果foo是通过call、apply或者bind调用的，那么这种调用就是显式绑定。</p>
-<p>这种绑定中,this的指向就是这三个函数中传递的第一个参数。</p>
-<h1 id="关键字new绑定"><a href="#关键字new绑定" class="headerlink" title="关键字new绑定"></a>关键字new绑定</h1><pre class=" language-js"><code class="language-js"><span class="token keyword">function</span> <span class="token function">foo</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> 
-    <span class="token keyword">this</span><span class="token punctuation">.</span>baz <span class="token operator">=</span> <span class="token string">"baz"</span><span class="token punctuation">;</span> 
-    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>bar <span class="token operator">+</span> <span class="token string">" "</span> <span class="token operator">+</span> baz<span class="token punctuation">)</span><span class="token punctuation">;</span> 
-<span class="token punctuation">}</span> 
-<span class="token keyword">var</span> bar <span class="token operator">=</span> <span class="token string">"bar"</span><span class="token punctuation">;</span> 
-<span class="token keyword">var</span> baz <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">foo</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> 
-</code></pre>
-<p>如果把new这个关键字放在一个函数调用的前面，JS编译器会做这四件事情：</p>
-<ol>
-<li>创建一个新的空的对象</li>
-<li>把这个对象链接到原型对象上</li>
-<li>这个对象被绑定为this</li>
-<li>如果这个函数不返回任何东西，那么就会默认return this</li>
-</ol>
-<p>关于new这个关键字的四步，看不懂也没事，有空的话会另写一篇文章具体介绍一下。不过，我们从这四步可以看出，如果在函数调用前面加上new，那么这个函数中的this就是这个新的对象。</p>
-<p>上面的例子，最终会输出undefined undefined。这是因为baz这个变量并没有bar这个属性，而baz此时只被定义，没有被赋值，因此baz也是undefined。</p>
-<h1 id="箭头函数"><a href="#箭头函数" class="headerlink" title="箭头函数"></a>箭头函数</h1><p>箭头函数会无视以上所有的规则，<strong>this的值就是函数创建时候所在的lexical scope中的this，而和调用方式无关</strong>。可以对比下面两个例子：</p>
-<pre class=" language-js"><code class="language-js"><span class="token keyword">function</span> <span class="token function">Person</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
-  <span class="token keyword">this</span><span class="token punctuation">.</span>age <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
-  <span class="token function">setTimeout</span><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>age<span class="token punctuation">)</span><span class="token punctuation">;</span>     <span class="token comment" spellcheck="true">// 输出undefined</span>
-  <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token number">1000</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                <h1 id="斐波那契"><a href="#斐波那契" class="headerlink" title="斐波那契"></a>斐波那契</h1><pre class=" language-js"><code class="language-js"><span class="token keyword">function</span> <span class="token function">fib</span><span class="token punctuation">(</span>n<span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token keyword">let</span> top<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">,</span>bottom<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">,</span>res<span class="token operator">=</span><span class="token number">0</span>
+    <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">let</span> i<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>i<span class="token operator">&lt;</span>n<span class="token punctuation">;</span>i<span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        res<span class="token operator">=</span>top<span class="token operator">+</span>bottom
+        bottom<span class="token operator">=</span>top
+        top<span class="token operator">=</span>res
+    <span class="token punctuation">}</span>
+    <span class="token keyword">return</span> res
 <span class="token punctuation">}</span>
-<span class="token keyword">var</span> p <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Person</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 </code></pre>
-<pre class=" language-js"><code class="language-js"><span class="token keyword">function</span> <span class="token function">Person</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
-  <span class="token keyword">this</span><span class="token punctuation">.</span>age <span class="token operator">=</span> <span class="token number">10</span><span class="token punctuation">;</span>
-  <span class="token function">setTimeout</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">=</span><span class="token operator">></span> <span class="token punctuation">{</span>
-    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>age<span class="token punctuation">)</span><span class="token punctuation">;</span>     <span class="token comment" spellcheck="true">// 输出10</span>
-  <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token number">1000</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<h1 id="动态规划"><a href="#动态规划" class="headerlink" title="动态规划"></a>动态规划</h1><p>题目：</p>
+<blockquote>
+<p><img src="/medias/loading.gif" data-original="https://cdn.jsdelivr.net/gh/woyaojinzuzhi/picgo/images/image-20210610203245114.png" alt="image-20210610203245114"></p>
+</blockquote>
+<p>解法：</p>
+<blockquote>
+<p><img src="/medias/loading.gif" data-original="https://cdn.jsdelivr.net/gh/woyaojinzuzhi/picgo/images/image-20210610203220736.png" alt="image-20210610203220736"></p>
+</blockquote>
+<h1 id="回文字符串"><a href="#回文字符串" class="headerlink" title="回文字符串"></a>回文字符串</h1><h2 id="判断一个字符是否是回文字符串"><a href="#判断一个字符是否是回文字符串" class="headerlink" title="判断一个字符是否是回文字符串"></a>判断一个字符是否是回文字符串</h2><pre class=" language-js"><code class="language-js"><span class="token keyword">function</span> <span class="token function">isPalindrome</span><span class="token punctuation">(</span>str<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">let</span> str1 <span class="token operator">=</span> str<span class="token punctuation">.</span><span class="token function">split</span><span class="token punctuation">(</span><span class="token string">''</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">reverse</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">join</span><span class="token punctuation">(</span><span class="token string">''</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">return</span> str1 <span class="token operator">===</span> str<span class="token punctuation">;</span>
 <span class="token punctuation">}</span>
-<span class="token keyword">var</span> p <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Person</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 </code></pre>
-<p>在上面没有使用箭头函数的例子当中，setTimeout内部的函数是被global调用的，而global没有age这个属性，因此输出undefined。</p>
-<p>第二个例子使用了箭头函数，this就会使用lexical scope中的this，就是Person，因此输出10。</p>
-<h1 id="绑定优先级"><a href="#绑定优先级" class="headerlink" title="绑定优先级"></a>绑定优先级</h1><p>如果多重绑定规格都适用，那么绑定规则的优先级顺序是这样的：</p>
-<ol>
-<li>箭头函数</li>
-<li>关键字new调</li>
-<li>显式绑定</li>
-<li>隐式绑定</li>
-<li>默认绑定</li>
-</ol>
+<h2 id="判断字符中的所有回文字符串"><a href="#判断字符中的所有回文字符串" class="headerlink" title="判断字符中的所有回文字符串"></a>判断字符中的所有回文字符串</h2><pre class=" language-js"><code class="language-js"><span class="token keyword">function</span> <span class="token function">palindromeStr</span><span class="token punctuation">(</span>str<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">let</span> temp <span class="token operator">=</span> <span class="token string">''</span><span class="token punctuation">;</span>
+    <span class="token keyword">let</span> result<span class="token operator">=</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">let</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> str<span class="token punctuation">.</span>length<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        temp <span class="token operator">=</span> <span class="token string">''</span><span class="token punctuation">;</span>
+        <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">let</span> j <span class="token operator">=</span> i<span class="token punctuation">;</span> j <span class="token operator">&lt;</span> str<span class="token punctuation">.</span>length<span class="token punctuation">;</span> j<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            temp <span class="token operator">+</span><span class="token operator">=</span> str<span class="token punctuation">.</span><span class="token function">charAt</span><span class="token punctuation">(</span>j<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token function">isPalindrome</span><span class="token punctuation">(</span>temp<span class="token punctuation">)</span> <span class="token operator">&amp;&amp;</span> result<span class="token punctuation">.</span><span class="token function">indexOf</span><span class="token punctuation">(</span>temp<span class="token punctuation">)</span> <span class="token operator">==</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                result<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>temp<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">return</span> result<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h2 id="判断字符串中的最长回文字符串"><a href="#判断字符串中的最长回文字符串" class="headerlink" title="判断字符串中的最长回文字符串"></a>判断字符串中的最长回文字符串</h2><pre class=" language-js"><code class="language-js"><span class="token keyword">function</span> <span class="token function">palindromeLongestStr</span><span class="token punctuation">(</span>str<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">let</span> temp <span class="token operator">=</span> <span class="token string">''</span><span class="token punctuation">;</span>
+    <span class="token keyword">let</span> longestStr<span class="token operator">=</span><span class="token string">''</span><span class="token punctuation">;</span>
+    <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">let</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> str<span class="token punctuation">.</span>length<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        temp <span class="token operator">=</span> <span class="token string">''</span><span class="token punctuation">;</span>
+        <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">let</span> j <span class="token operator">=</span> i<span class="token punctuation">;</span> j <span class="token operator">&lt;</span> str<span class="token punctuation">.</span>length<span class="token punctuation">;</span> j<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            temp <span class="token operator">+</span><span class="token operator">=</span> str<span class="token punctuation">.</span><span class="token function">charAt</span><span class="token punctuation">(</span>j<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token function">isPalindrome</span><span class="token punctuation">(</span>temp<span class="token punctuation">)</span> <span class="token operator">&amp;&amp;</span> longestStr<span class="token punctuation">.</span>length <span class="token operator">&lt;</span> temp<span class="token punctuation">.</span>length<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                <span class="token comment" spellcheck="true">// 如果想输出同等大小的后一位，则在判断那加个等于号</span>
+                longestStr <span class="token operator">=</span> temp<span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">return</span> longestStr<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h1 id="冒泡排序"><a href="#冒泡排序" class="headerlink" title="冒泡排序"></a>冒泡排序</h1><pre class=" language-js"><code class="language-js"><span class="token keyword">var</span> arr <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">311</span><span class="token punctuation">,</span><span class="token number">32</span><span class="token punctuation">,</span><span class="token number">33</span><span class="token punctuation">,</span><span class="token number">5</span><span class="token punctuation">,</span><span class="token number">21</span><span class="token punctuation">,</span><span class="token number">6</span><span class="token punctuation">,</span><span class="token number">7</span><span class="token punctuation">,</span><span class="token number">312</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">var</span> i <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span> i <span class="token operator">&lt;=</span> arr<span class="token punctuation">.</span>length<span class="token number">-1</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">var</span> j <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span> j <span class="token operator">&lt;=</span> arr<span class="token punctuation">.</span>length<span class="token operator">-</span>i<span class="token punctuation">;</span> j<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span>arr<span class="token punctuation">[</span>j<span class="token number">-1</span><span class="token punctuation">]</span> <span class="token operator">></span> arr<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">var</span> temp <span class="token operator">=</span> arr<span class="token punctuation">[</span>j<span class="token number">-1</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+            arr<span class="token punctuation">[</span>j<span class="token number">-1</span><span class="token punctuation">]</span> <span class="token operator">=</span> arr<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">;</span>
+            arr<span class="token punctuation">[</span>j<span class="token punctuation">]</span> <span class="token operator">=</span> temp<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>arr<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
 
                 
             </div>
@@ -682,7 +695,7 @@ foo<span class="token punctuation">.</span><span class="token function">call</sp
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://www.xyljj.top/2021/06/21/gao-pin-this/">https://www.xyljj.top/2021/06/21/gao-pin-this/</a>
+                    <a href="https://www.xyljj.top/2021/06/16/suan-fa-lei/">https://www.xyljj.top/2021/06/16/suan-fa-lei/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -719,7 +732,11 @@ foo<span class="token punctuation">.</span><span class="token function">call</sp
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
+                            
+                                <a href="/tags/%E5%9F%BA%E7%A1%80%E7%AE%97%E6%B3%95/">
+                                    <span class="chip bg-color">基础算法</span>
+                                </a>
+                            
                         </div>
                     
                 </div>
@@ -1155,17 +1172,18 @@ foo<span class="token punctuation">.</span><span class="token function">call</sp
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2021/06/21/sheng-ming-zhou-qi/">
+                <a href="/2021/06/16/suan-fa-lei/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/loading.gif" data-original="/medias/featureimages/0.jpg" class="responsive-img" alt="">
+                        <img src="/medias/loading.gif" data-original="/medias/featureimages/0.jpg" class="responsive-img" alt="算法类题型">
                         
-                        <span class="card-title"></span>
+                        <span class="card-title">算法类题型</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -1175,16 +1193,29 @@ foo<span class="token punctuation">.</span><span class="token function">call</sp
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-06-21
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-06-16
+                            </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            Mr.李还行
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E7%AE%97%E6%B3%95/" class="post-category">
+                                    算法
+                                </a>
+                            
                             
                         </span>
                     </div>
+                </div>
+
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E5%9F%BA%E7%A1%80%E7%AE%97%E6%B3%95/">
+                        <span class="chip bg-color">基础算法</span>
+                    </a>
+                    
                 </div>
                 
             </div>
@@ -1196,13 +1227,13 @@ foo<span class="token punctuation">.</span><span class="token function">call</sp
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2021/06/21/di-er-bu-fen/">
+                <a href="/2021/06/15/react-mian-shi-ti/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/loading.gif" data-original="/medias/featureimages/0.jpg" class="responsive-img" alt="">
+                        <img src="/medias/loading.gif" data-original="/medias/featureimages/22.jpg" class="responsive-img" alt="react面试题(01)">
                         
-                        <span class="card-title"></span>
+                        <span class="card-title">react面试题(01)</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -1213,15 +1244,27 @@ foo<span class="token punctuation">.</span><span class="token function">call</sp
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-06-21
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-06-15
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            Mr.李还行
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/react%E5%A4%8D%E4%B9%A0/" class="post-category">
+                                    react复习
+                                </a>
+                            
                             
                         </span>
                     </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/react%E9%9D%A2%E8%AF%95%E9%A2%98/">
+                        <span class="chip bg-color">react面试题</span>
+                    </a>
+                    
                 </div>
                 
             </div>
